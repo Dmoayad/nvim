@@ -99,8 +99,7 @@ return packer.startup(function(use)
 	use({
 		"iamcco/markdown-preview.nvim",
 		--commit = "02cc3874738bc0f86e4b91f09b8a0ac88aef8e96",
-		run = "cd app && npm install",
-		ft = "markdown",
+    run = function() vim.fn["mkdp#util#install"]() end,
 	})
 
   -- Latex
