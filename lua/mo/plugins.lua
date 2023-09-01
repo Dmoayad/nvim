@@ -101,6 +101,7 @@ return packer.startup(function(use)
 		--commit = "02cc3874738bc0f86e4b91f09b8a0ac88aef8e96",
     run = function() vim.fn["mkdp#util#install"]() end,
 	})
+  use({ "andweeb/presence.nvim" })
 
   -- Latex
   use({ "lervag/vimtex" })
